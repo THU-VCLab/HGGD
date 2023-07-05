@@ -1,0 +1,13 @@
+cupoch
+graspnetAPI
+matplotlib
+numba
+open3d
+opencv-python
+pytorch3d
+scikit-image
+tensorboardX
+torchsummary
+tqdm
+transforms3d
+trimesh

@@ -1,0 +1,36 @@
+CUDA_VISIBLE_DEVICES=0 python train_graspnet.py \
+--batch-size 2 \
+--step-cnt 4 \
+--lr 3e-3 \
+--anchor-num 7 \
+--anchor-k 6 \
+--anchor-w 50 \
+--anchor-z 20 \
+--all-points-num 25600 \
+--group-num 512 \
+--center-num 128 \
+--scene-l 0 \
+--scene-r 100 \
+--noise 0 \
+--grid-size 8 \
+--input-w 640 \
+--input-h 360 \
+--loc-a 1 \
+--reg-b 5 \
+--cls-c 1 \
+--offset-d 1 \
+--sigma 10 \
+--epochs 10 \
+--pre-epochs 0 \
+--ratio 8 \
+--num-workers 2 \
+--local-grasp-num 500 \
+--grasp-count 5000 \
+--save-freq 1 \
+--optim 'adam' \
+--dataset-path '/data/6dto2drefine_kinect' \
+--scene-path '/ssd/graspnet' \
+--description 'graspnet_dropout_resnet50' \
+--use-CE-loss \
+--joint-trainning
+# --checkpoint './logs/checkpoint/2d_kinect'

@@ -1,0 +1,32 @@
+CUDA_VISIBLE_DEVICES=0 python test_acronym.py \
+--anchor-k 6 \
+--anchor-w 50 \
+--anchor-z 20 \
+--noise 5e-3 \
+--ratio 8 \
+--grid-size 8 \
+--input-h 360 \
+--input-w 640 \
+--loc-a 1 \
+--reg-b 1 \
+--cls-c 1 \
+--sigma 10 \
+--anchor-num 7 \
+--scene-l 400 \
+--scene-r 500 \
+--all-points-num 25600 \
+--group-num 512 \
+--local-grasp-num 500 \
+--center-num 32 \
+--grasp-count 5000 \
+--local-k 1 \
+--rotation-num 1 \
+--local-thres 0.01 \
+--heatmap-thres 0.01 \
+--top-num 0.6 \
+--dataset-path '/data/acronym_cluttered_500' \
+--description 'acronym_baseline' \
+--use-CE-loss \
+--checkpoint './logs/221225_142512_acronym_anchor_7_no_fusion_no_shift/epoch_3_score_0.590_cover_0.717'
+# --checkpoint './logs/221228_210121_acronym_anchor_7_finetune_no_detach/epoch_1_score_0.603_cover_0.758'
+# --checkpoint './logs/230426_041635_acronym_rectangle/epoch_9_score_0.617_cover_0.648'
