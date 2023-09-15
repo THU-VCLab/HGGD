@@ -53,11 +53,7 @@ pip install --no-index --no-cache-dir pytorch3d -f https://dl.fbaipublicfiles.co
 
 Install other packages via Pip.
 
-You may install [graspnetAPI](https://github.com/graspnet/graspnetAPI) from source or using [this](https://github.com/graspnet/graspnetAPI/issues/48) to avoid the sklearn error.
-
 ```bas
-export SKLEARN_ALLOW_DEPRECATED_SKLEARN_PACKAGE_INSTALL=True
-# avoid this error: The 'sklearn' PyPI package is deprecated, use 'scikit-learn' rather than 'sklearn' for pip commands.
 pip install -r requirements.txt
 ```
 
