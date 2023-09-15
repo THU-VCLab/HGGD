@@ -64,12 +64,12 @@ bash demo.sh
 
 Typical hyperparameters:
 
-```bash
---center-num: sampled local center/region number, higher number means more regions&grasps, but gets slower speed, default: 48
---grid-size: grid size for our grid-based center sampling, higher number means sparser centers, default: 8
---all-points-num: downsampled point cloud point number, default: 25600
---group-num: local region point cloud point number, default: 512
---local-k: grasp detection number in each local region, default: 10
+```python
+center-num # sampled local center/region number, higher number means more regions&grasps, but gets slower speed, default: 48
+grid-size # grid size for our grid-based center sampling, higher number means sparser centers, default: 8
+all-points-num # downsampled point cloud point number, default: 25600
+group-num # local region point cloud point number, default: 512
+local-k # grasp detection number in each local region, default: 10
 ```
 
 # Citation
