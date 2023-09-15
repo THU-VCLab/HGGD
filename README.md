@@ -6,7 +6,7 @@ Official code of paper [Efficient Heatmap-Guided 6-Dof Grasp Detection in Clutte
 
 # Framework
 
-![framework](./figures/framework.jpg)
+![framework](./images/framework.jpg)
 
 # Requirements
 
