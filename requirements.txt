@@ -1,9 +1,8 @@
-numpy==1.22.3
-pandas==1.3.0
-numba==0.53.1
-cupoch==0.2.6.0
+numpy==1.23.5
+pandas
+cupoch
+numba
 grasp_nms
-graspnetAPI
 matplotlib
 open3d
 opencv-python
@@ -13,3 +12,5 @@ torchsummary
 tqdm
 transforms3d
 trimesh
+autolab_core
+cvxopt
