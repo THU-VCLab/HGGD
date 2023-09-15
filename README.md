@@ -46,6 +46,10 @@ pip install -r requirements.txt
 
 # Usage
 
+## Checkpoint
+
+Checkpoints (realsense/kinect) can be downloaded from [Tsinghua Cloud](https://cloud.tsinghua.edu.cn/d/e3edfc2c8b114513b7eb/)
+
 ## Train
 
 Training code will be released in future.
