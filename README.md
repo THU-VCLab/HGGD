@@ -34,13 +34,30 @@ Get the code.
 git clone https://github.com/THU-VCLab/HGGD.git
 ```
 
-Please install [pytorch](https://pytorch.org/) and [pytorch3d](https://github.com/facebookresearch/pytorch3d/blob/main/INSTALL.md) manually.
-
-Install other packages via Pip in Conda environment.
+Create new Conda environment.
 
 ```bash
 conda create -n hggd python=3.8
 cd HGGD
+```
+
+Please install [pytorch](https://pytorch.org/) and [pytorch3d](https://github.com/facebookresearch/pytorch3d/blob/main/INSTALL.md) manually.
+
+```bash
+# pytorch-1.11.0
+pip install torch==1.11.0+cu113 torchvision==0.12.0+cu113 torchaudio==0.11.0 --extra-index-url https://download.pytorch.org/whl/cu113
+# pytorch3d
+pip install fvcore
+pip install --no-index --no-cache-dir pytorch3d -f https://dl.fbaipublicfiles.com/pytorch3d/packaging/wheels/py38_cu113_pyt1110/download.html
+```
+
+Install other packages via Pip.
+
+You may install [graspnetAPI](https://github.com/graspnet/graspnetAPI) from source or using [this](https://github.com/graspnet/graspnetAPI/issues/48) to avoid the sklearn error.
+
+```bas
+export SKLEARN_ALLOW_DEPRECATED_SKLEARN_PACKAGE_INSTALL=True
+# avoid this error: The 'sklearn' PyPI package is deprecated, use 'scikit-learn' rather than 'sklearn' for pip commands.
 pip install -r requirements.txt
 ```
 
