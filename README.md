@@ -13,16 +13,22 @@ Official code of paper [Efficient Heatmap-Guided 6-Dof Grasp Detection in Clutte
 - Python >= 3.8
 - PyTorch >= 1.10
 - pytorch3d
+- numpy==1.23.5
+- pandas
 - cupoch
-- matplotlib
 - numba
-- graspnetAPI
+- grasp_nms
+- matplotlib
 - open3d
-- tensorBoard
-- numPy
-- sciPy
-- pillow
+- opencv-python
+- scikit-image
+- tensorboardX
+- torchsummary
 - tqdm
+- transforms3d
+- trimesh
+- autolab_core
+- cvxopt
 
 ## Installation
 
