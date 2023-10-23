@@ -182,12 +182,14 @@ def center2dtopc(rect_ggs: List,
             neighbor_depths = depths[i, x_range, y_range]
             depth_mask = (neighbor_depths > 0)
             if depth_mask.sum() == 0:
-                continue
+                # continue
                 # this will use all centers
-                # cur_d = depths[i].mean()
+                cur_d = depths[i].mean()
+            else:
+                cur_d = neighbor_depths[depth_mask].float().median(
+                ) + delta_d[j]
             # set valid mask
             mask[j] = True
-            cur_d = neighbor_depths[depth_mask].float().median() + delta_d[j]
             # convert
             new_center = torch.from_numpy(convert_2d_to_3d(
                 x, y, cur_d.cpu())).cuda()
