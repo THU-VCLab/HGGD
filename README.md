@@ -130,6 +130,21 @@ group-num # local region point cloud point number, default: 512
 local-k # grasp detection number in each local region, default: 10
 ```
 
+## Results
+
+Evaluation results on RealSense camera:
+| | Seen | Similar | Novel |
+| :------: | :---: | :-----: | :---: |
+| In paper | 59.36 | 51.20 | 22.17 |
+| In repo | 64.45 | 53.59 | 24.59 |
+
+Evaluation results on Kinect camera:
+
+|          | Seen  | Similar | Novel |
+| :------: | :---: | :-----: | :---: |
+| In paper | 60.26 |  48.59  | 18.43 |
+| In repo  | 61.17 |  47.02  | 19.37 |
+
 # Citation
 
 Please cite our paper in your publications if it helps your research:
