@@ -132,11 +132,14 @@ local-k # grasp detection number in each local region, default: 10
 
 ## Results
 
+Attention: HGGD detects grasps only from heatmap guidance, without any workspace mask (adopted in [Graspness](https://github.com/rhett-chen/graspness_implementation)) or object/foreground segmentation method (adopted in [Scale-balanced Grasp](https://github.com/mahaoxiang822/scale-balanced-grasp)). It may be useful to add some of this prior information to get better results.
+
 Evaluation results on RealSense camera:
-| | Seen | Similar | Novel |
+
+|          | Seen  | Similar | Novel |
 | :------: | :---: | :-----: | :---: |
-| In paper | 59.36 | 51.20 | 22.17 |
-| In repo | 64.45 | 53.59 | 24.59 |
+| In paper | 59.36 |  51.20  | 22.17 |
+| In repo  | 64.45 |  53.59  | 24.59 |
 
 Evaluation results on Kinect camera:
 
