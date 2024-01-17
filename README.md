@@ -77,7 +77,35 @@ Containing converted and refined grasp poses from each image in graspnet dataset
 
 ## Train
 
-Training code will be released in future.
+Training code has been released, please refer to [training script](./train_graspnet.sh)
+
+Typical hyperparameters:
+
+```shell
+batch-size # batch size, default: 4
+step-cnt # step number for gradient accumulation, actual_batch_size = batch_size * step_cnt, default: 2
+lr # learning rate, default: 1e-2
+anchor-num # spatial rotation anchor number, default: 7
+anchor-k # in-plane roation anchor number, default: 6
+anchor-w # grasp width anchor size, default: 50
+anchor-z # grasp depth anchor size, default: 20
+all-points-num # point cloud downsample number, default: 25600
+group-num # local region fps number, default: 512
+center-num # sampled local center/region number, default: 128
+noise # point cloud noise scale, default: 0
+ratio # grasp attributes prediction downsample ratio, default: 8
+grid-size # grid size for our grid-based center sampling, default: 8
+scene-l & scene-r # scene range, train: 0~100, seen: 100~130, similar: 130~160, novel: 160~190
+input-w & input-h # downsampled input image size, should be 640x360
+loc-a & reg-b & cls-c & offset-d # loss multipier, default: 1, 5, 1, 1
+epochs # training epoch number, default: 15
+num-workers # dataloader worker number, default: 4
+save-freq # checkpoint saving frequency, default: 1
+optim # optimizer, default: 'adamw'
+dataset-path # our preprocessed dataset path (read grasp poses)
+scene-path  # original graspnet dataset path (read images)
+joint-trainning # whether to joint train our two part of network (trainning is a typo, should be training, please ignore it)
+```
 
 ## Test
 
