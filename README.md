@@ -7,7 +7,7 @@
     <a href="https://ieeexplore.ieee.org/document/10168242" target="_blank">
     <img src="https://img.shields.io/badge/ieee-%2300629B.svg?&style=for-the-badge&logo=ieee&logoColor=white"></a>
     <a href="https://arxiv.org/pdf/2403.18546" target="_blank">
-    <img src="https://img.shields.io/badge/Paper-arXiv-green" alt="Paper arXiv"></a>
+    <img src="https://img.shields.io/badge/arxiv-%23B31B1B.svg?&style=for-the-badge&logo=arxiv&logoColor=white" alt="Paper arXiv"></a>
     <a href="https://www.youtube.com/watch?v=V8gG1eHbrsU" target="_blank">
     <img src="https://img.shields.io/badge/youtube-%23FF0000.svg?&style=for-the-badge&logo=youtube&logoColor=white" alt="Youtube"/></a>
     <a href="https://www.bilibili.com/video/BV1hH4y1H7qv/" target="_blank">
