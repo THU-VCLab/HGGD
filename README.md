@@ -14,7 +14,6 @@
     <img src="https://img.shields.io/badge/bilibili-%2300A1D6.svg?&style=for-the-badge&logo=bilibili&logoColor=white" alt="Bilibili"/></a>
 </div>
 </h2>
-# HGGD
 
 Official code of paper [Efficient Heatmap-Guided 6-Dof Grasp Detection in Cluttered Scenes](https://ieeexplore.ieee.org/document/10168242)
 
