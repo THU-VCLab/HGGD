@@ -329,7 +329,7 @@ def log_and_save(args,
                  anchors,
                  save_folder,
                  mode='regnet'):
-    # Log validation results to tensorbaord
+    # Log validation results to tensorboard
     # loss
     tb.add_scalar('val_loss/loss', results['loss'], epoch)
     tb.add_scalar('val_loss/anchor_loss', results['anchor_loss'], epoch)
@@ -425,7 +425,7 @@ def log_and_save(args,
 
 
 def log_test_result(args, results, epoch, mode='regnet'):
-    # Log validation results to tensorbaord
+    # Log validation results to tensorboard
     # loss
     logging.info('Test Loss:')
     logging.info(f'test loss: {results["loss"]:.3f}')
